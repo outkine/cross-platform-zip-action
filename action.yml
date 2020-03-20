@@ -1,13 +1,12 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: Cross Platform Zip
+description: Zip a folder
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  inPath:
+    description: input folder path
     required: true
-    default: '1000'
-outputs:
-  time: # output will be available to future steps 
-    description: 'The message to output'
+  outPath:
+    description: output path
+    required: true
 runs:
   using: 'node12'
   main: 'dist/index.js'
